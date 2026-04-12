@@ -1,10 +1,12 @@
 import React, {useActionState, useReducer} from 'react';
+import { Form, FormGroup, Label, Input, Button } from 'reactstrap';
 import BookingForm from './BookingForm';
-  
+ import 'bootstrap/dist/css/bootstrap.min.css'; 
    
 // 1. Initial State
 const initialState = {
   username: '',
+  email1: '',
   details: { email: '', bio: '' }
 };
 
@@ -37,11 +39,13 @@ function BookingPage() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      {/* 4. Pass dispatch to children */}
-      <BookingForm dispatch={dispatch} state={state} />
-      <button type="submit">Submit</button>
-    </form>
+    <div className="container">
+        <Form onSubmit={handleSubmit}>
+        {/* 4. Pass dispatch to children */}
+        <BookingForm dispatch={dispatch} state={state} />
+        <Button type="submit" color="primary" className="w-100">Submit</Button>
+        </Form>
+    </div>
   );
 }
 

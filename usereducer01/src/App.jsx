@@ -8,12 +8,12 @@ function App() {
   return (
     <>
       <h1>App.jsx</h1>
-      <hr/>
-      <ParentForm/>
-       <hr/>
+    {/*}  <hr/>
+      <ParentForm/> 
+       <hr/> */}
       <BookingPage/>          
     </>
   )
 }
 
-export default App
+export default App;

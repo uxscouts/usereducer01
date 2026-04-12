@@ -22,7 +22,7 @@ function BookingForm({ dispatch, state }) {
             />
         </FormGroup>
         <FormGroup>
-            <Label for="username">Username</Label>
+            <Label for="email1">Email 1</Label>
             <Input
                 type="text"
                 placeholder="Email 1"
@@ -34,7 +34,8 @@ function BookingForm({ dispatch, state }) {
                 })}
             />
       </FormGroup>
-      <FormGroup>    
+      <FormGroup> 
+        <Label for="email">Email</Label>   
         <Input
             type="text"
             placeholder="Email"
@@ -46,7 +47,8 @@ function BookingForm({ dispatch, state }) {
             })}
         />
       </FormGroup>
-      <FormGroup> 
+      <FormGroup>
+        <Label for="bio">Bio</Label> 
         <Input
             type="text"
             placeholder="Bio"

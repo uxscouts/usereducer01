@@ -40,6 +40,7 @@ function BookingPage() {
 
   return (
     <div className="container">
+      <p>{state.email1}</p>
         <Form onSubmit={handleSubmit}>
         {/* 4. Pass dispatch to children */}
         <BookingForm dispatch={dispatch} state={state} />

@@ -38,11 +38,13 @@ function ParentForm() {
   };
 
   return (
+    <>
     <form onSubmit={handleSubmit}>
       {/* 4. Pass dispatch to children */}
       <ChildInput dispatch={dispatch} state={state} />
       <button type="submit">Submit</button>
     </form>
+    </>
   );
 }
 

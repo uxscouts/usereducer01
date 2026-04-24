@@ -7,7 +7,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // 5. Child Component
 function BookingForm({ dispatch, state }) {
   return (
-    <div>
+    <section>
+        <Form>
         <FormGroup>
             <Label for="username">Username</Label>
             <Input
@@ -59,8 +60,9 @@ function BookingForm({ dispatch, state }) {
                 value: e.target.value 
             })}
         />
-      </FormGroup>     
-    </div>
+      </FormGroup> 
+      </Form>    
+    </section>
   );
 }
 
